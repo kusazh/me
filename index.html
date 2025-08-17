@@ -2,82 +2,126 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="UTF-8" />
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FFFFFF">
+  <link rel="stylesheet" href="https://unpkg.com/tategaki/assets/tategaki.css" />
   <title>Kusa Zhang Xingtian</title>
-  <meta name="viewport" content="width=device-width" />
-  <meta charset="UTF-8" />
+  <style type="text/css">
+    body {
+      width: 30rem;
+      margin: 5rem auto;
+      padding: 0 2rem;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: black;
+      text-underline-offset: 0.2rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 75%;
+      color: gray;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    header img {
+      width: 3rem;
+      height: auto;
+    }
+
+    .kusai:hover {
+      color: darkgoldenrod;
+    }
+
+    section,
+    body:has(section:target) section:first-of-type {
+      display: none;
+    }
+
+    section:target,
+    section:first-of-type,
+    body:has(section:first-of-type:target) section:first-of-type {
+      display: block;
+    }
+
+    #en {
+      font-family: "Gill Sans MT", Gill Sans, Sans-serif;
+    }
+
+    #cl {
+      font-family: "Hiragino Mincho Pro", "新宋体", serif;
+      letter-spacing: 25%;
+      margin-right: 5rem;
+    }
+
+    #cl p {
+      margin-block: 0 1.5rem;
+    }
+
+    #cl div,
+    footer {
+      margin-left: auto;
+      width: 100%;
+      height: 15rem;
+      overflow-x: auto;
+    }
+
+    @media screen and (max-width: 34rem) {
+      body {
+        width: auto;
+      }
+
+      #cl {
+        margin: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <img src="../images/logo.svg" alt="Logo" />
   </header>
-  <article>
-    <p class="intro">
-      Kusa (born Zhang Xingtian) is a Beijing-based
-      <a href="#se">software engineer</a>,
-      <a href="#dev">independent developer</a>, and
-      <a href="#art">art & design amateur</a>.
+  <section id="en">
+    <p>
+      Kusa (born Zhang Xingtian) is a Beijing-based developer at
+      <a href="https://www.douban.com">Douban</a> and an amateur in art and
+      <a href="../sketchbook">design</a>.
     </p>
     <p>
       Kusa writes
       <a href="https://kusai.bearblog.dev" class="kusai"><i>kusai</i></a>
-      Chinese articles.
+      articles in Chinese.
     </p>
     <p>Find him on <a href="../kusazh">this meta verse</a>.</p>
-    <h2 id="se">Software Engineer</h2>
-    <p>
-      Kusa works at
-      <a href="https://www.douban.com/people/kusazh/">Douban</a>
-      as a backend engineer mainly using Python.
-    </p>
-    <h2 id="dev">Independent Developer</h2>
-    <p>
-      Kusa is an Apple developer who designed and programmed experimental
-      applications. Among his creations is <i>Pink Pill</i>, a poem generator.
-    </p>
-    <img src="images/pill.png" height="580" alt="Pill" />
-    <p><i>Pink Pill</i> has a <a href="../pill">web demake version</a>.</p>
-    <p></p>
-    <h2 id="art">Art & Design Amateur</h2>
-    <p>
-      Kusa has been working on contemporary poetry, digital art and graphic
-      design. He has self-published several poetry collections in different
-      forms.
-    </p>
-    <p>
-      The latest work is
-      <a href="../so-so"><i>So-so</i></a>, a Chinese poetry game for Nintendo® Game Boy™.
-    </p>
-    <img src="images/so-so.png" width="580" alt="So-so" />
-    <p></p>
-    <p>
-      He designs <a href="../sketchbook">logos and icons</a> for his
-      university and friends.
-    </p>
-    <img src="images/logos.png" width="580" alt="Logos" />
-    <p></p>
-    <p>
-      He writes
-      <a href="https://kusai.bearblog.dev" class="kusai"><i>kusai</i></a>
-      articles. His fiction, <i>The Quizzer</i>, has been published on
-      <a href="https://www.gcores.com/articles/118001">Gamecores</a>.
-    </p>
     <footer>
-      <p>
-        Some designs of this page are copied from
-        <a href="https://dhh.dk">dhh.dk</a>.
-      </p>
-      <p>
-        This page is also available in <a href="cl">Classical Chinese</a>.
-      </p>
+      This page is also available in <a href="#cl">Classical Chinese</a>.
     </footer>
-  </article>
+  </section>
+  <section id="cl" lang="zh">
+    <div class="tategaki">
+      <p>
+        張苦洒行天者，北京人也。業軟體开发者於<a href="https://www.douban.com/">豆瓣</a>，好藝術及<a href="../sketchbook">設計</a>也。
+      </p>
+      <p>作白話文，惟<a href="https://kusai.bearblog.dev" class="kusai">苦洒矣</a>。</p>
+      <p>會諸<a href="../kusazh">此後設詩篇</a>。</p>
+    </div>
+    <footer class="tategaki">
+      <p>本頁引以<a href="https://github.com/Denkiame/Tategaki-Core">縱書核</a>。</p>
+      <p>本頁亦有<a href="#en">英文版</a>。</p>
+    </footer>
+  </section>
 </body>
 
 </html>
