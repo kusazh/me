@@ -9,19 +9,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FFFFFF">
-  <link rel="stylesheet" href="https://unpkg.com/tategaki/assets/tategaki.css" />
   <title>Kusa Zhang Xingtian</title>
   <style type="text/css">
     body {
-      width: 30rem;
-      margin: 5rem auto;
-      padding: 0 2rem;
-      font-size: 1.5rem;
+      width: 22.5rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
 
     a {
       color: black;
-      text-underline-offset: 0.2rem;
+      text-underline-offset: 12.5%;
     }
 
     footer {
@@ -32,7 +30,7 @@
 
     header {
       text-align: center;
-      margin-bottom: 4rem;
+      margin: 5rem 0 4rem 0;
     }
 
     header img {
@@ -56,44 +54,47 @@
     }
 
     #en {
-      font-family: "Gill Sans MT", Gill Sans, Sans-serif;
+      font: 1.5rem "Gill Sans MT", Gill Sans, Sans-serif;
     }
 
     #cl {
-      font-family: "Hiragino Mincho Pro", "新宋体", serif;
+      font: 1.25rem "Hiragino Mincho Pro", "新宋体", serif;
       letter-spacing: 25%;
-      margin-right: 5rem;
-    }
-
-    #cl p {
-      margin-block: 0 1.5rem;
     }
 
     #cl div,
-    footer {
+    #cl footer {
+      width: 16rem;
       margin-left: auto;
-      width: 100%;
-      height: 15rem;
-      overflow-x: auto;
+      margin-right: auto;
+      writing-mode: vertical-rl;
     }
 
-    @media screen and (max-width: 34rem) {
+    #cl div {
+      height: 12.5rem;
+    }
+
+    #cl footer {
+      padding-right: 0.5rem;
+    }
+
+    #cl p {
+      margin-block-start: 0;
+    }
+
+    @media screen and (max-width: 25.5rem) {
       body {
         width: auto;
-      }
-
-      #cl {
-        margin: 0;
       }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <img src="../images/logo.svg" alt="Logo" />
-  </header>
   <section id="en">
+    <header>
+      <img src="../images/logo.svg" alt="Logo" />
+    </header>
     <p>
       Kusa (born Zhang Xingtian) is a Beijing-based developer at
       <a href="https://www.douban.com">Douban</a> and an amateur in art and
@@ -104,22 +105,24 @@
       <a href="https://kusai.bearblog.dev" class="kusai"><i>kusai</i></a>
       articles in Chinese.
     </p>
-    <p>Find him on <a href="../kusazh">this meta verse</a>.</p>
+    <p>Find him on <a href="../kusazh#en">this meta verse</a>.</p>
     <footer>
       This page is also available in <a href="#cl">Classical Chinese</a>.
     </footer>
   </section>
-  <section id="cl" lang="zh">
-    <div class="tategaki">
+  <section id="cl" lang="zh-Hant">
+    <header>
+      <img src="../images/logo.svg" alt="Logo" />
+    </header>
+    <div>
       <p>
-        張苦洒行天者，北京人也。業軟體开发者於<a href="https://www.douban.com/">豆瓣</a>，好藝術及<a href="../sketchbook">設計</a>也。
+        張苦洒行天者，北京人也。業軟體開發於<a href="https://www.douban.com/">豆瓣</a>，好藝術及<a href="../sketchbook">設計</a>也。
       </p>
       <p>作白話文，惟<a href="https://kusai.bearblog.dev" class="kusai">苦洒矣</a>。</p>
       <p>會諸<a href="../kusazh">此後設詩篇</a>。</p>
     </div>
-    <footer class="tategaki">
-      <p>本頁引以<a href="https://github.com/Denkiame/Tategaki-Core">縱書核</a>。</p>
-      <p>本頁亦有<a href="#en">英文版</a>。</p>
+    <footer>
+      本頁亦有<a href="#en">英文版</a>。
     </footer>
   </section>
 </body>
