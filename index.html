@@ -17,17 +17,6 @@
       padding: 0 1.5rem;
     }
 
-    a {
-      color: black;
-      text-underline-offset: 12.5%;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 75%;
-      color: gray;
-    }
-
     header {
       text-align: center;
       margin: 5rem 0 4rem 0;
@@ -38,8 +27,15 @@
       height: auto;
     }
 
-    .kusai:hover {
-      color: darkgoldenrod;
+    a {
+      color: initial;
+      text-underline-offset: 12.5%;
+    }
+
+    footer {
+      font-size: 75%;
+      color: gray;
+      margin-top: 2rem;
     }
 
     section,
@@ -51,6 +47,31 @@
     section:first-of-type,
     body:has(section:first-of-type:target) section:first-of-type {
       display: block;
+    }
+
+    .hide,
+    .hide a {
+      color: rgba(0, 0, 0, 0);
+    }
+
+    .kusai:hover {
+      color: darkgoldenrod;
+    }
+
+    .soso:hover {
+      color: #acd794 !important;
+    }
+
+    .pill:hover {
+      color: mediumvioletred !important;
+    }
+
+    .boarding:hover {
+      color: whitesmoke !important;
+    }
+
+    .github:hover {
+      color: blueviolet !important;
     }
 
     #en {
@@ -71,7 +92,7 @@
     }
 
     #cl div {
-      height: 12.5rem;
+      height: 17.2rem;
     }
 
     #cl footer {
@@ -106,6 +127,12 @@
       articles in Chinese.
     </p>
     <p>Find him on <a href="../kusazh#en">this meta verse</a>.</p>
+    <p class="hide">
+      He invites you to play a <a href="../so-so" class="soso"><i>so-so</i></a> game,
+      to take a <a href="../pill" class="pill"><i>pill</i></a>,
+      to print a <a href="../boarding" class="boarding"><i>boarding pass</i></a>,
+      or to watch <a href="https://github.com/kusazh" class="github">behind the scenes</a>.
+    </p>
     <footer>
       This page is also available in <a href="#cl">Classical Chinese</a>.
     </footer>
@@ -120,6 +147,10 @@
       </p>
       <p>作白話文，惟<a href="https://kusai.bearblog.dev" class="kusai">苦洒矣</a>。</p>
       <p>會諸<a href="../kusazh">此後設詩篇</a>。</p>
+      <p class="hide">
+        延公<a href="../so-so" class="soso">草々</a>遊戲，服<a href="../pill" class="pill">粉丸</a>，印<a href="../boarding"
+          class="boarding">文牒</a>，或觀其<a href="https://github.com/kusazh" class="github">幕後</a>。
+      </p>
     </div>
     <footer>
       本頁亦有<a href="#en">英文版</a>。
