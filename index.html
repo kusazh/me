@@ -18,8 +18,9 @@
     }
 
     header {
+      padding-top: 3.5rem;
+      margin-bottom: 3rem;
       text-align: center;
-      margin: 5rem 0 4rem 0;
     }
 
     header img {
@@ -29,13 +30,14 @@
 
     a {
       color: initial;
+      white-space: nowrap;
       text-underline-offset: 12.5%;
     }
 
     footer {
       font-size: 75%;
       color: gray;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     section,
@@ -49,50 +51,40 @@
       display: block;
     }
 
+    .color,
+    .hide a {
+      text-shadow: 0 0 64px var(--effect-color);
+    }
+
+    .color:hover,
+    .hide a:hover {
+      color: var(--effect-color);
+    }
+
     .hide,
     .hide a {
       color: rgba(0, 0, 0, 0);
     }
 
-    .kusai:hover {
-      color: darkgoldenrod;
-    }
-
-    .soso:hover {
-      color: #acd794 !important;
-    }
-
-    .pill:hover {
-      color: mediumvioletred !important;
-    }
-
-    .boarding:hover {
-      color: whitesmoke !important;
-    }
-
-    .github:hover {
-      color: blueviolet !important;
-    }
-
     #en {
-      font: 1.5rem "Gill Sans MT", Gill Sans, Sans-serif;
+      font: 1.5rem "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }
 
     #cl {
       font: 1.25rem "Hiragino Mincho Pro", "新宋体", serif;
-      letter-spacing: 25%;
     }
 
     #cl div,
     #cl footer {
-      width: 16rem;
+      width: 12.5rem;
       margin-left: auto;
       margin-right: auto;
       writing-mode: vertical-rl;
+      letter-spacing: 0.25em;
     }
 
     #cl div {
-      height: 17.2rem;
+      height: 13.75em;
     }
 
     #cl footer {
@@ -118,20 +110,21 @@
     </header>
     <p>
       Kusa (born Zhang Xingtian) is a Beijing-based developer at
-      <a href="https://www.douban.com">Douban</a> and an amateur in art and
+      <a href="https://www.douban.com" class="color" style="--effect-color: #2D963D;">Douban</a>
+      and an amateur in art and
       <a href="../sketchbook">design</a>.
     </p>
     <p>
       Kusa writes
-      <a href="https://kusai.bearblog.dev" class="kusai"><i>kusai</i></a>
+      <a href="https://kusai.bearblog.dev" class="color" style="--effect-color: darkgoldenrod;"><i>kusai</i></a>
       articles in Chinese.
     </p>
     <p>Find him on <a href="../kusazh#en">this meta verse</a>.</p>
     <p class="hide">
-      He invites you to play a <a href="../so-so" class="soso"><i>so-so</i></a> game,
-      to take a <a href="../pill" class="pill"><i>pill</i></a>,
-      to print a <a href="../boarding" class="boarding"><i>boarding pass</i></a>,
-      or to watch <a href="https://github.com/kusazh" class="github">behind the scenes</a>.
+      He invites you to play a <a href="../so-so" style="--effect-color: #acd794;"><i>so-so</i></a> game,
+      to take a <a href="../pill" style="--effect-color: mediumvioletred;"><i>pill</i></a>,
+      to print a <a href="../boarding" style="--effect-color: whitesmoke;"><i>boarding pass</i></a>,
+      or to watch <a href="https://github.com/kusazh" style="--effect-color: blueviolet;">behind the scenes</a>.
     </p>
     <footer>
       This page is also available in <a href="#cl">Classical Chinese</a>.
@@ -143,13 +136,18 @@
     </header>
     <div>
       <p>
-        張苦洒行天者，北京人也。業軟體開發於<a href="https://www.douban.com/">豆瓣</a>，好藝術及<a href="../sketchbook">設計</a>也。
+        張苦洒行天者，北京人也。業軟體開發於<a href="https://www.douban.com/" class="color" style="--effect-color: #2D963D;">豆瓣</a>，好藝術及<a
+          href="../sketchbook">設計</a>也。
       </p>
-      <p>作白話文，惟<a href="https://kusai.bearblog.dev" class="kusai">苦洒矣</a>。</p>
+      <p>
+        作白話文，惟<a href="https://kusai.bearblog.dev" class="color" style="--effect-color: darkgoldenrod;">苦洒矣</a>。
+      </p>
       <p>會諸<a href="../kusazh">此後設詩篇</a>。</p>
       <p class="hide">
-        延公<a href="../so-so" class="soso">草々</a>遊戲，服<a href="../pill" class="pill">粉丸</a>，印<a href="../boarding"
-          class="boarding">文牒</a>，或觀其<a href="https://github.com/kusazh" class="github">幕後</a>。
+        延公<a href="../so-so" style="--effect-color: #acd794;">草々</a>遊戲，服<a href="../pill"
+          style="--effect-color: mediumvioletred;">粉丸</a>，印<a href="../boarding"
+          style="--effect-color: whitesmoke;">文牒</a>，或觀其<a href="https://github.com/kusazh"
+          style="--effect-color: blueviolet;">幕後</a>。
       </p>
     </div>
     <footer>
